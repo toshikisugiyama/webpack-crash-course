@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './style.css';
+import './style.scss';
 import img from './toshikiSugiyama.jpg';
 function component(){
     const element = document.createElement('div');
