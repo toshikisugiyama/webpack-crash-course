@@ -1,18 +1,7 @@
-import _ from 'lodash';
-import './style.css';
-import './style.scss';
-import img from './toshikiSugiyama.jpg';
-function component(){
-    const element = document.createElement('div');
-    const array = ['Hello', 'webpack', '!'];
-    // lodash はアンスコを使う
-    element.innerHTML = _.join(array, ' ');
-    return element;
-};
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-document.body.appendChild(component());
-document.body.classList.add('haikei');
-
-const image = new Image();
-image.src = img;
-document.body.appendChild(image);
+ReactDOM.render(
+  <div>Hello, React!</div>,
+  document.getElementById('root')
+)
